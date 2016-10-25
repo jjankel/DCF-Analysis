@@ -188,6 +188,9 @@ if evaltype.lower() == 'multi':
     ws.write('B14', Termval, money)
     ws.write('B15', Entvalue, money)
     ws.write('B16', Fairval, yelmon)
+    "Clear Revenue List"
+    for i in range(1, futurenum, 1):
+        Revenues.pop(i)
     "_______________WS2________________"
     "SHEET SETUP"
     ws2.write('A3', 'Revenues', bold)
@@ -277,6 +280,9 @@ if evaltype.lower() == 'multi':
     ws2.write('B14', Termval, money)
     ws2.write('B15', Entvalue, money)
     ws2.write('B16', Fairval, yelmon)
+    "Clear Revenue List"
+    for i in range(1, futurenum, 1):
+        Revenues.pop(i)
     "_______________WS3________________"
     "SHEET SETUP"
     ws3.write('A3', 'Revenues', bold)
@@ -366,6 +372,9 @@ if evaltype.lower() == 'multi':
     ws3.write('B14', Termval, money)
     ws3.write('B15', Entvalue, money)
     ws3.write('B16', Fairval, yelmon)
+    "Clear Revenue List"
+    for i in range(1, futurenum, 1):
+        Revenues.pop(i)
 elif evaltype.lower() == 'wacc':
     beta = float(input('Please input beta: '))
     Rf = float(input('Please input Rf: '))
@@ -486,6 +495,9 @@ elif evaltype.lower() == 'wacc':
     ws.write('B14', Termval, money)
     ws.write('B15', Entvalue, money)
     ws.write('B16', Fairval, yelmon)
+    "Clear Revenue List"
+    for i in range(1, futurenum, 1):
+        Revenues.pop(i)
     "_______________WS2________________"
     "SHEET SETUP"
     ws2.write('A3', 'Revenues', bold)
@@ -574,6 +586,9 @@ elif evaltype.lower() == 'wacc':
     ws2.write('B14', Termval, money)
     ws2.write('B15', Entvalue, money)
     ws2.write('B16', Fairval, yelmon)
+    "Clear Revenue List"
+    for i in range(1, futurenum, 1):
+        Revenues.pop(i)
     "_______________WS3________________"
     "SHEET SETUP"
     ws3.write('A3', 'Revenues', bold)
@@ -662,6 +677,9 @@ elif evaltype.lower() == 'wacc':
     ws3.write('B14', Termval, money)
     ws3.write('B15', Entvalue, money)
     ws3.write('B16', Fairval, yelmon)
+    "Clear Revenue List"
+    for i in range(1, futurenum, 1):
+        Revenues.pop(i)
 else:
     print('Sorry, answer not recognised...')
 "CHART"
